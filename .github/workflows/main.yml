@@ -13,6 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Update index.html (Team Leader)
-        if: github.actor == 'YOUR_GITHUB_USERNAME'
+        if: github.actor == 'stu-vuc-uts-acc'
         run: |
           sed -i '/<\/body>/i <p>Updated by Team Leader on '"$(date)"'</p>' index.html
